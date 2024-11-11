@@ -1,0 +1,74 @@
+:root {
+    --background-color: rgb(255, 235, 169);
+    --background-light-color: rgb(247, 247, 229);
+    --background-color-gray: rgb(59, 59, 59);
+    --background-color-lightGray: rgb(229, 226, 226);
+    --clr-black: #242424;
+    --clr-white: #f3f3f3;
+  }
+  
+  /* Personalización del Toastify */
+  .Toastify__toast-container {
+    font-size: 0.6rem; 
+  }
+  
+  .Toastify__toast {
+    background-color: var(--background-light-color);
+    color: var(--clr-black);
+    border-radius: 8px;
+    padding: 8px 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s ease;
+  }
+  
+  /* Estilos para el ícono de éxito */
+  .Toastify__toast--success {
+    background-color: var(--background-color);
+    color: var(--clr-black);
+    border-left: 5px solid var(--background-color-gray);
+  }
+  
+  /* Estilos para el ícono de error */
+  .Toastify__toast--error {
+    background-color: var(--background-color);
+    color: var(--clr-black);
+    border-left: 5px solid var(--background-color);
+  }
+  
+  /* Estilos para el ícono de advertencia */
+  .Toastify__toast--warning {
+    background-color: var(--background-color-lightGray);
+    color: var(--clr-black);
+    border-left: 5px solid var(--background-color-gray);
+  }
+  
+  /* Personalización del texto */
+  .Toastify__toast-body {
+    font-family: 'Arial', sans-serif;
+    font-weight: 500;
+  }
+  
+  /* Personalización del botón de cierre */
+  .Toastify__close-button {
+    color: var(--clr-black);
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+  .Toastify__close-button:hover {
+    opacity: 1;
+  }
+  
+  /* Tamaño de la barra de progreso */
+  .Toastify__progress-bar {
+    height: 3px;
+  }
+  .Toastify__progress-bar--success {
+    background-color: var(--background-color-gray);
+  }
+  .Toastify__progress-bar--error {
+    background-color: var(--clr-white);
+  }
+  .Toastify__progress-bar--warning {
+    background-color: var(--clr-black);
+  }
+  

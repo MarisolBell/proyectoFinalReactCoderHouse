@@ -1,0 +1,6 @@
+/* ******sección Banner Principal************************** */
+.banner-ppal img{
+    margin-top:6px;
+    width:100vw;
+    box-shadow: 10px 5px 5px rgb(244, 223, 154);
+}

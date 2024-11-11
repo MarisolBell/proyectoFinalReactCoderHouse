@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --background-color: rgb(255, 235, 169);
+  --background-light-color: rgb(247, 247, 229);
+  --background-color-gray: rgb(59, 59, 59);
+  --background-color-lightGray: rgb(229, 226, 226);
+  --clr-black: #242424;
+  --clr-white: #f3f3f3;
+  --clr-yellow: rgb(255, 235, 169);
+  --clr-hover-yellow: rgb(241, 219, 95); 
+}
+
+/****** Estilos del Footer ******/
+
+footer {
+  background-color: var(--background-color-gray);
+  padding: 2rem;
+}
+
+footer .medios-tittle {
+    color: var(--clr-white);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+/*** Contenedor Principal de Soporte ***/
+.suport-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 2rem; 
+    padding: 1rem;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    box-sizing: border-box;
+}
+
+/*** Contenedor Medios de Pago ***/
+.medios-pagos-image {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr); 
+  gap: 2px;
+  margin: 0.5rem 0;
+}
+
+.medios-pagos-image img {
+  max-width: 100%;
+  height: auto;
+  
+ 
+}
+
+/*** Contenedor Medios de Envío ***/
+.medios-envios-image {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 5px;
+  margin: 0.5rem 0;
+}
+
+.medios-envios-image img { 
+  max-width: 100%;
+  height: auto;
+  
+}
+
+/*** Contenedor Redes Sociales ***/
+.redes-sociales-items {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.redes-sociales-icon i {
+  font-size: 1.5rem;
+  color: var(--clr-white);
+  transition: color 0.3s ease;
+}
+
+.redes-sociales-icon i:hover {
+  color: var(--clr-yellow);
+}
+
+.redes-sociales a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.redes-sociales a:hover {
+  color: var(--background-color-gray);
+}
+
+/*** Contenedor Contacto ***/
+.contacto-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  
+}
+
+.contacto-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--clr-black);
+  font-size: 1rem;
+  color: var(--clr-white);
+}
+
+.contacto-item i {
+  font-size: 1.2rem;
+  color: var(--clr-white);
+}
+
+/*** Contenedor Page Creator ***/
+
+.page-creator-container{
+    display:flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    padding: 1rem 0; 
+    box-sizing: border-box;
+    background-color: var(--background-light-color);
+}
+
+.page-creator {
+  text-align: center;
+  padding-top: 0.5rem;
+  color: var(--clr-black);
+  font-size: 14px;
+  
+
+}
+
+.page-creator i {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  color: var(--clr-black);
+}
+
+/*** Títulos de Sección ***/
+.medios-tittle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: var(--clr-black);
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 1030px) {
+    .suport-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }    
+        
+}
+@media screen and (max-width: 650px) {
+    .suport-info {
+        display: grid;
+        grid-template-columns:1fr; 
+    }    
+        
+}

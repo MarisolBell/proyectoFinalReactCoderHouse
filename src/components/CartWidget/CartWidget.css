@@ -1,0 +1,33 @@
+/********************icono cart***************************/
+.cart {
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+
+.bi-cart-fill {
+    color: var(--clr-black);
+   
+}
+
+
+.numerito {
+    position: absolute;
+    top: -2px; 
+    right: -18px; 
+    font-size: 0.6rem; 
+    background-color: var(--background-color-gray);
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+}
+
+.icon-cart-filled {
+    color: var(--clr-black); 
+  }
+  
+ 
+  .icon-cart-empty {
+    color: rgb(195, 194, 194); 
+  }

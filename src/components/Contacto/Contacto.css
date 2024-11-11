@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Variables de Colores */
+:root {
+  --background-color: rgb(255, 235, 169);
+  --background-color-gray: rgb(59, 59, 59);
+  --background-color-lightGray: rgb(229, 226, 226);
+  --clr-black: #242424;
+  --clr-white: #f3f3f3;
+}
+
+/* Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+.modal-contenido {
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: scaleUp 0.5s ease;
+  margin: 2rem auto;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Formulario de Contacto */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  border: 1px solid var(--background-color-gray);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--background-color-gray);
+  outline: none;
+}
+
+
+
+/* Botones del Formulario */
+.boton,
+.boton.cerrar {
+  border: 0;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  padding: 1rem 2rem;
+  border-radius: 5%;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover,
+.boton.cerrar:hover {
+  background-color: var(--background-color);
+  color: var(--clr-black);
+}
+
+.success-message {
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.error-message {
+  color: 2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Ajustes Responsivos para el Modal */
+@media (max-width: 600px) {
+  .modal-contenido {
+    width: 90%;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Variables de Colores */
+:root {
+  --background-color: rgb(255, 235, 169);
+  --background-color-gray: rgb(59, 59, 59);
+  --background-color-lightGray: rgb(229, 226, 226);
+  --clr-black: #242424;
+  --clr-white: #f3f3f3;
+}
+
+/* Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Contenedor principal del checkout */
+.checkout-container {
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: scaleUp 0.5s ease;
+  margin: 2rem auto;
+  
+}
+
+.thank-you-message{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.thank-you-message-title{
+  margin-top: 4rem;
+  font-size: 2rem;
+}
+
+.thank-you-message-order{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-size:1.5rem;
+ 
+}
+
+.return-home-link a {
+  text-decoration: none;
+  color:var(--background-color-gray);
+  
+}
+.return-home-link{
+  margin: 2rem 0;
+}
+
+.i bi bi-arrow-return-left::before{
+  color:var(--clr-black);
+  font-size: 2rem;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Formulario del Checkout */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.checkout-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.checkout-form label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.checkout-form input {
+  padding: 0.5rem;
+  border: 1px solid var(--background-color-gray);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.checkout-form input:focus {
+  border-color: var(--background-color-gray);
+  outline: none;
+}
+
+/* Botón del Checkout */
+.checkout-button {
+  border: 0;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  padding: 1rem 2rem;
+  border-radius: 5%;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+  background-color: var(--background-color);
+  color: var(--clr-black);
+}
+
+/* Ajustes Responsivos para el Checkout */
+@media (max-width: 600px) {
+  .checkout-container {
+    width: 90%;
+    padding: 1rem;
+  }
+  .thank-you-message-title{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+  
+  .thank-you-message-order{
+    margin-top: 2rem;
+    margin-inline:1rem;
+    font-size:1rem;
+   
+  }
+  
+}

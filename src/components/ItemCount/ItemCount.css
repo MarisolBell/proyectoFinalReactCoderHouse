@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin:0;
+    padding :0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+
+}
+
+:root{
+    --background-color: rgb(255, 235, 169) ;
+    --background-light-color : rgb(247, 247, 229);
+    --background-color-gray: rgb(59, 59, 59) ;
+    --background-color-lightGray:rgb(229, 226, 226);
+    --clr-black: #242424;
+    --clr-white: #f3f3f3;
+}
+
+
+.itemCount-container{
+    display:flex;
+    align-items:flex-start;
+    margin-top: 5rem;
+}
+
+.btn{
+    border: transparent;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    padding:0.5rem 1rem;
+    margin-inline: 0.5rem;
+    font-weight: bolder;
+
+}
+
+.btn:hover {
+    background-color: var(--clr-black);
+    color:var(--clr-white); 
+}
+
+.numero-cart{
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    margin: 0 0.5rem; 
+}
+
+.agregar-carrito{
+    border-color: transparent;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    padding: 0.6rem;
+    margin-inline: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.agregar-carrito:hover {
+    background-color: var(--background-color);
+    color: var(--clr-black);
+  }
+
+  
+  
+  

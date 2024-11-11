@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --background-color: rgb(255, 235, 169);
+    --background-light-color: rgb(247, 247, 229);
+    --background-color-gray: rgb(59, 59, 59);
+    --background-color-lightGray: rgb(229, 226, 226);
+    --clr-black: #242424;
+    --clr-white: #f3f3f3;
+}
+
+/* Estilos para la página 404 */
+.pagina-no-encontrada-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color-lightGray);
+    text-align: center;
+    color: var(--clr-black);
+    flex-direction: column;
+}
+
+.pagina-no-encontrada-title {
+    font-size: 2rem;
+    color: var(--background-color-gray);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.pagina-no-encontrada-text {
+    font-size: 1.5rem;
+    color: var(--background-color-gray); 
+    margin-top: 0.5rem;
+    font-weight: 300;
+}
+
+.pagina-no-encontrada-link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--background-color-gray);
+    margin-top: 1rem;
+    display: inline-block;
+    border: 2px solid var(--background-color-gray);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.pagina-no-encontrada-link:hover {
+    background-color: var(--background-color-gray);
+    color: var(--clr-white);
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 600px) {
+    .pagina-no-encontrada-title {
+        font-size: 1.5rem;
+    }
+
+    .pagina-no-encontrada-text {
+        font-size: 1rem;
+    }
+}
