@@ -2,7 +2,7 @@ import { useState } from "react"
 import FormCheckout from "./FormCheckout"
 import { useContext } from "react"
 import { CartContext } from "../../Context/CartContext";
-import { Timestamp, addDoc, collection, doc, setDoc } from "firebase/firestore"
+import { Timestamp, addDoc, collection} from "firebase/firestore"
 import { db } from '../../firebase/config';
 import { Link } from "react-router-dom"
 import validateForm from "../../utils/validateForm.js" 

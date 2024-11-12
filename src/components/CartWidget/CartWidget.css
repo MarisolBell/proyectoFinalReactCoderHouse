@@ -18,7 +18,7 @@
     right: -18px; 
     font-size: 0.6rem; 
     background-color: var(--background-color-gray);
-    color: white;
+    color:var(--clr-white);
     border-radius: 50%;
     padding: 2px 5px;
 }

@@ -52,7 +52,7 @@
   .cart-product-header h2 {
     color: var(--clr-black);
     font-size: 18px;
-    margin-right: 10px; /* Espacio entre el nombre y la imagen */
+    margin-right: 10px; 
   }
   
   /* Imagen pequeña del producto */

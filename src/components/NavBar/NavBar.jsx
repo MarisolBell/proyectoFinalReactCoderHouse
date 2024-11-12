@@ -8,19 +8,13 @@ const NavBar = () => {
   // Estado para el menú hamburguesa
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Estado para la barra de búsqueda
-  const [searchOpen, setSearchOpen] = useState(false);
 
   // Función para alternar el menú hamburguesa
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  // Función para alternar la barra de búsqueda
-  const toggleSearch = () => {
-    setSearchOpen(!searchOpen);
-  };
-
+ 
   return (
     <div className="nav-menu">
       {/* Logo */}

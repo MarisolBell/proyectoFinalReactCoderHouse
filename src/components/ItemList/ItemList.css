@@ -42,12 +42,12 @@
 /* Media Queries */
 @media (max-width: 1080px) {
     .items {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns for screens up to 980px */
+        grid-template-columns: repeat(3, 1fr); 
     }
 }
 
 @media (max-width: 730px) {
     .items {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile screens */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }

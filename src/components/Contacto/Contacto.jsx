@@ -3,8 +3,8 @@ import { db } from '../../firebase/config';
 import { collection, addDoc } from "firebase/firestore";
 import "./Contacto.css";
 import validateContactForm from "../../utils/validateContactForm";
-import { toast } from 'react-toastify'; // Importar toastify
-import 'react-toastify/dist/ReactToastify.css'; // Importar los estilos de Toastify
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 
 function Contacto() {
   const [formData, setFormData] = useState({
@@ -25,7 +25,7 @@ function Contacto() {
     e.preventDefault();
     
     // Limpiar mensajes anteriores
-    toast.dismiss(); // Opcional, para cerrar cualquier mensaje anterior antes de enviar uno nuevo.
+    toast.dismiss(); 
 
     // Validar el formulario usando Yup
     validateContactForm(formData)
